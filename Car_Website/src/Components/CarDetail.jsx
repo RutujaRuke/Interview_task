@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import { motion } from "framer-motion";
 import { FaCar, FaShieldAlt, FaGasPump, FaUsers, FaCogs } from "react-icons/fa";
@@ -13,7 +15,7 @@ const CarDetail = () => {
     ];
 
     return (
-        <div className="bg-black text-white px-4 py-8 md:px-16 lg:px-32">
+        <div className="bg-black text-white px-4 py-8 sm:px-6 md:px-12 lg:px-16">
             {/* Header Section */}
             <motion.div
                 className="text-center md:text-left"
@@ -21,14 +23,14 @@ const CarDetail = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
             >
-                <h1 className="text-2xl md:text-4xl font-bold">Mahindra XUV 700</h1>
-                <div className="flex justify-center md:justify-start items-center mt-2">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">Mahindra XUV 700</h1>
+                <div className="flex flex-col sm:flex-row justify-center md:justify-start items-center mt-2">
                     <div className="text-orange-400 flex items-center">
                         {[...Array(5)].map((_, index) => (
                             <i key={index} className="fa fa-star text-orange-500"></i>
                         ))}
                     </div>
-                    <span className="ml-2 text-sm text-gray-400">(108 Reviews)</span>
+                    <span className="ml-0 sm:ml-2 text-sm text-gray-400 mt-1 sm:mt-0">(108 Reviews)</span>
                 </div>
                 <p className="text-lg font-semibold mt-2 text-sky-400">
                     Rs.13.18 - 24.58 Lakh
@@ -36,7 +38,7 @@ const CarDetail = () => {
             </motion.div>
 
             {/* Features Section */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
                 {cardData.map((item, index) => (
                     <motion.div
                         key={index}
