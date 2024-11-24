@@ -381,6 +381,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import CarDetails from "./CarDetail";
 
 const Home = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -473,7 +474,7 @@ const Home = () => {
 
                 {/* Description */}
                 <motion.p
-                    className="text-gray-400 mt-5 md:mt-10 px-4 md:px-20"
+                    className="text-gray-400 mt-5 md:mt-[-40px] px-4 md:px-20"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
@@ -483,6 +484,7 @@ const Home = () => {
                     adrenaline like never before.
                 </motion.p>
             </div>
+            <CarDetails/>
         </div>
     );
 };
