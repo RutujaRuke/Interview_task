@@ -31,7 +31,7 @@ const Reviews = () => {
 
     return (
         <>
-            <div className="bg-black text-white p-8">
+            <div className="bg-black text-white p-8 mb-[-50px]">
                 {/* Header */}
                 <div className="text-left">
                     <h1 className="text-4xl md:text-5xl font-bold"> <span className="text-7xl">" </span><span className="font-normal font-thin">Mahindra XUV700 </span></h1>
@@ -113,60 +113,54 @@ const Reviews = () => {
 
 
 
-
-            <div className="min-h-screen bg-black text-white flex items-center justify-center px-4">
-                <div className="max-w-4xl w-full flex flex-col md:flex-row items-center gap-6">
+            <div className="min-h-screen pt-[-250px] bg-black text-white flex items-center justify-center px-4 lg:px-8 m-0">
+                <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Text Section */}
-                    <div className="flex-1">
+                    <div className="flex flex-col items-start">
                         <motion.h1
-                            className="text-4xl md:text-5xl font-bold leading-tight"
+                            className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight"
                             initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
                         >
                             Mahindra XUV700 <span className="text-yellow-400">Related Videos</span>
                         </motion.h1>
-                        <motion.div className="flex items-center justify-between space-x-7">
-                            <motion.div
-                                className="lg:w-1/2"
-                                initial={{ opacity: 0, x: 50 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 0.8 }}
-                            >
-                                <img
-                                    src="/pause.png" // Replace with actual car image URL
-                                    alt="Mahindra XUV700"
-                                    className="w-full h-auto object-contain"
-                                />
-                            </motion.div>
-
-                            <motion.p
-                                className="text-gray-400 text-sm md:text-base leading-relaxed"
-                                initial={{ opacity: 0, x: -20 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ delay: 0.2, duration: 0.5 }}
-                            >
-                                Mahindra XUV700 2022 has videos of its detailed review, pros & cons, comparison & variant explained, test drive experience, features, specs, interior & exterior details, and more. Watch our latest Hindi video of Mahindra XUV700 to know price, safety features & more.
-                            </motion.p>
+                        <motion.div
+                            className="mt-6"
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.2, duration: 0.5 }}
+                        >
+                            <p className="text-gray-400 text-sm md:text-base leading-relaxed">
+                                Mahindra XUV700 2022 has videos of its detailed review, pros & cons,
+                                comparison & variant explained, test drive experience, features,
+                                specs, interior & exterior details, and more. Watch our latest Hindi
+                                video of Mahindra XUV700 to know price, safety features & more.
+                            </p>
                         </motion.div>
 
                     </div>
 
-                    {/* Play Button and Car Image Section */}
+                    {/* Image Section */}
                     <motion.div
-                    className="lg:w-1/2"
-                    initial={{ opacity: 0, x: 50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8 }}
-                >
-                    <img
-                        src="/car6.png" // Replace with actual car image URL
-                        alt="Mahindra XUV700"
-                        className="w-full h-auto object-contain"
-                    />
-                </motion.div>
+                        className="w-[350px]"
+                        initial={{ opacity: 0, x: 50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
+                    >
+                        <img
+                            src="/car6.png" // Replace with actual car image URL
+                            alt="Mahindra XUV700"
+                            className="w-full h-auto object-contain rounded-lg"
+                        />
+                    </motion.div>
                 </div>
             </div>
+
+
+            
+
+
         </>
     );
 };
