@@ -6,6 +6,8 @@ import CarDetails from "./CarDetail";
 import CarDetail2 from "./CarDetail2";
 import CarDetail3 from "./CarDetail3";
 import CarDetail4 from "./CarDetail4";
+import CarDetail5 from "./CarDetail5";
+import Reviews from "./Reviews";
 
 const Home = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -115,6 +117,8 @@ const Home = () => {
         <CarDetail2/>
         <CarDetail3/>
         <CarDetail4/>
+        <CarDetail5/>
+        <Reviews/>
         </>
     );
 };
